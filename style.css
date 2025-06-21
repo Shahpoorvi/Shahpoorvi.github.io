@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --pink: #CDB4DB;
+    --light-pink: #FFC8DD;
+    --apricot: #FFAFCC;
+    --light-blue: #BDE0FE;
+    --blue: #A2D2FF;
+    --black: #111111;
+    --font-default:  "Roboto", sans-serif;
+    --space-small: 8px;
+    --space-medium: 16px;
+    --space-large: 32px;
+    --space-xl: 64px;
+}
 html {
      box-sizing: border-box;
      font-size: 16px;
@@ -51,3 +66,203 @@ html {
  select {
      font: inherit;
  }
+/* Removes all margins and paddings and applies border box to every single element */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+     box-sizing: border-box;
+     font-size: var(--space-medium);
+     font-family: var(--font-default);
+     color: var(--black);
+     scroll-behavior: smooth;
+}
+ main {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     
+ }
+  header {
+     display: flex;
+     flex-direction: column;
+     gap: var(--space-small);
+     justify-content: center;
+     padding:var(--space-medium);
+     background-color: var(--pink);
+ }
+
+ .about{
+    background-color:var(--blue);
+ }
+  footer {
+     display: flex;
+     flex-direction: column;
+     gap: var(--space-small);
+     justify-content: center;
+     padding:var(--space-small);
+     background-color: #CDB4DB;
+ }
+ .projects{
+    border-block-start-color: #90a955;
+    background-color: var(--light-pink);
+    padding: auto;
+    justify-content: center;
+
+ }
+.flex {
+     display: flex;
+     background-color: var(--light-pink);
+ }
+.padding-small {
+     padding: var(--space-small);
+}
+.padding-medium {
+     padding: var(--space-medium);
+}
+.padding-large {
+     padding: var(--space-large);
+}
+.padding-xl {
+     padding: var(--space-xl);
+}
+.hero {
+     background-color: var(--brand);
+     color: var(--white);
+     justify-content: flex-start;
+     flex-direction: column;
+     align-items: center;
+     flex-direction: row;
+     border-radius: var(--space-small);
+     padding:var(--space-large);
+     gap:var(--space-medium);
+}
+ img {
+     width: 100px;
+     height: 100px;
+     border-radius: 80%;
+     object-fit: cover;
+
+}
+.desktop-nav {
+     background-color: var(--action);
+     color: var(--white);
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-end;
+     border-radius: var(--space-small);
+     padding:var(--space-large);
+     gap:var(--space-medium);
+     background-color: #BDE0FE;
+}
+.Portfolio {
+     background-color: var(--base-light);
+     color: var(--white);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius: var(--space-small);
+     padding:var(--space-large);
+     gap:var(--space-medium);
+  }
+ .contact{
+    background-color: var(--pink);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+ }
+  
+ .socials-icon{
+     background-color: var(--action);
+     color: var(--white);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius: var(--space-small);
+     padding:var(--space-large);
+     gap:var(--space-medium);
+  }
+.icon{
+     max-height: 100px;
+     width: auto;
+}
+ .footer{
+    margin-top: var(--space-medium);
+ }
+  footer nav ul{
+    display:flex;
+    justify-content:center;
+    gap:var(--space-medium);
+ }
+  .copyright-bar{
+     background-color: var(--base-dark);
+     color: var(--white);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius: var(--space-small);
+     padding:var(--space-small);
+ }
+  .article-container {
+    display:flex;
+    flex-direction: column;
+    gap: var(--space-medium);
+ }
+ article {
+     background-color: var(--base-light);
+     border-radius: var(--space-medium);
+     display:flex;
+     flex-direction:column;
+     align-items:flex-start;
+     gap:var(--space-small);
+ }
+ article .icon {
+     width: 24px;
+ }
+ article .button{
+    margin-top:var(--space-medium);
+ }
+ .button {
+     border-radius: 4px;
+     background-color: #ECF39E;
+     padding: var(--space-small) var(--space-medium);
+     text-decoration: none;
+     color: black;
+     border:none;
+     box-shadow: 0 0 var(--space-medium) rgba(0,0,0,0.1);
+     transition: all 0.2s ease-in-out;
+ }
+ .button:hover{
+    box-shadow: 0 0 var(--space-medium) rgba(0,0,0,0.3),
+                0 0 var(--space-large) rgba(0,0,0,0.1) ;
+ }
+ a:hover {
+    color:#90a955; text-decoration: none; font-weight: none;
+ }
+.icon:hover{
+    box-shadow: 0 0 var(--space-medium) rgba(0,0,0,0.3),
+                0 0 var(--space-large) rgba(0,0,0,0.1) ;
+}
+a:link {
+   color:black
+}
+a:visited {
+   color:black
+}
+a:hover {
+   color: burlywood
+}
+ p {
+    text-wrap:balance;
+    align-items: center;
+}
+
+
+
+
+
+
+ 
